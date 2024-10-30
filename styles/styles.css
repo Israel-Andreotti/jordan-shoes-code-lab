@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --brand-color: #7CA2F4;
+    --dark: #121214;
+    --gray: #F3F7FF;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Archivo", sans-serif;
+}
+
+.shipping {
+    padding: .8rem 0;
+    text-align: center;
+    font: 500;
+    font-size: .9rem;
+}
+
+.hero-container {
+    background: url('../images/image-michael-jordan.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:1.2rem
+}
+
+.hero-content {
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 168px;
+    gap: 40px
+}
+
+.brand {
+    display: flex;
+    gap: 8px
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px
+}
+
+.hero-text h1 {
+    font-size: 1.5rem;
+}
+
+.hero-text p {
+    font-size: 1rem;
+    line-height: 22.4px;
+}
+
+main {
+    padding-inline: 1.5rem;
+    padding-block: 56px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+article h2 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+article p {
+    font-size: 14px;
+    line-height: 19.6px;
+    text-align: center;
+}
+
+.products-container {
+    display: grid;
+    place-content: center;
+}
+
+.card img {
+    margin-bottom: 12px;
+}
+
+.card h3 {
+    margin-bottom: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.category {
+    color: var(--brand-color);
+    margin-bottom: 24px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+@media (width >= 768px) {
+    .shipping p {
+        font-size: 16px;
+    }
+
+    .hero-container {
+        height: 350px;
+        background: url('../images/image-michael-jordan-tablet.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .brand p {
+        font-size: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 24px;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+    }
+
+    article h2 {
+        font-size: 24px;
+    }
+
+    article p {
+        font-size: 16px;
+    }
+
+    .products-container {
+        grid-template-columns: 50% 50%;
+        justify-items: center;
+    }
+
+    .item-name {
+        font-size: 18px;
+    }
+
+    .category {
+        font-size: 16px;
+    }
+    
+    .price {
+        font-size: 20px;
+    }
+}
+
+@media (width >= 1200px) {
+    .hero-container {
+        height: 400px;
+        background: url('../images/image-michael-jordan-desktop.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding-left: 200px;
+    }
+
+    article {
+        display: block;
+        width: 593px;
+        margin: .5rem auto;
+        gap: 12px;
+        margin-bottom: 40px;
+    }
+
+    article h2 {
+        font-size: 32px;
+        margin-bottom: 1rem;
+    }
+
+    article p {
+        font-size: 24px;
+        line-height: 32px
+    }
+
+    .products-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-inline: 3rem;
+    }
+}
